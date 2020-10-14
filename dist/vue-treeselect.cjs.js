@@ -3225,14 +3225,13 @@ var Option = {
       var node = this.node;
       var instance = this.instance;
       return h("div", {
-        attrs: {
-          type: "button",
-          keydown: this.onEventListenerOption,
-          tabindex: node.isBranch && instance.disableBranchNodes ? '-1' : '0'
-        },
         "class": "vue-treeselect__label-container",
         on: {
           "mousedown": this.handleMouseDownOnLabelContainer
+        },
+        attrs: {
+          keydown: this.onEventListenerOption,
+          tabindex: node.isBranch && instance.disableBranchNodes ? '-1' : '0'
         }
       }, [children]);
     },

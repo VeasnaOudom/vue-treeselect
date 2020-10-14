@@ -143,7 +143,7 @@
         const node = this.node
         const instance = this.instance
         return (
-          <div type="button" class="vue-treeselect__label-container" onMousedown={this.handleMouseDownOnLabelContainer} keydown={this.onEventListenerOption} tabindex={node.isBranch && instance.disableBranchNodes ? '-1' : '0'}>
+          <div class="vue-treeselect__label-container" onMousedown={this.handleMouseDownOnLabelContainer} keydown={this.onEventListenerOption} tabindex={node.isBranch && instance.disableBranchNodes ? '-1' : '0'}>
             {children}
           </div>
         )
